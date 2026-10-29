@@ -8,7 +8,7 @@ export const profiles = sqliteTable("profiles", {
   userId: integer()
     .notNull()
     .unique()
-    .references(() => accounts.id, { onDelete: "cascade" }), // Added cascade delete for clean user removal
+    .references(() => accounts.id, { onDelete: "cascade" }), // cascade delete when account is removed
   image: text(),
   username: text().notNull().unique(),
   bio: text(),

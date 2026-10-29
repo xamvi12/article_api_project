@@ -26,3 +26,12 @@ lerna-debug.log*
 
 # misc
 .DS_Store
+.gemini/
+# build
+dist/
+
+
+# sqlite databases
+*.sqlite
+*.sqlite-journal
+*.db
